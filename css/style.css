@@ -15,7 +15,15 @@ body {
 
 button {
     cursor: pointer;
-    
+    outline: none;
+    color: var(--prim);
+    font-size: 2rem;
+    background-color: var(--sec);
+    border: 1px solid var(--tert);
+}
+
+button:hover {
+    background-color: #ccc;
 }
 
 h1 {
@@ -40,6 +48,11 @@ h1 {
     box-shadow: 5px 5px 5px var(--tert);
 }
 
+.curr-operand {
+    color: var(--tert);
+    font-size: 2rem;
+}
+
 .header {
     padding: 10px 0;
     background-color: var(--prim);
@@ -48,4 +61,34 @@ h1 {
 
 .main {
     padding: 50px 0;
+}
+
+.output {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    height: 70px;
+    word-wrap: break-word;
+    word-break: break-all;
+    background-color: #000;
+    opacity: 0.75;
+}
+
+.prev-operand {
+    color: var(--tert);
+    font-size: 2rem;
+
+}
+
+.span-two {
+    grid-column: span 2;
+    color: var(--sec);
+    background-color: var(--tert);
+}
+
+.upper {
+    text-transform: uppercase;
 }
