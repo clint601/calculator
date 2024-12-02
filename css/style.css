@@ -1,0 +1,51 @@
+* {box-sizing: border-box;}
+
+:root{
+    --prim: #b5179e;
+    --sec: #fff;
+    --tert: #3a0ca3;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eaeae3;
+}
+
+button {
+    cursor: pointer;
+    
+}
+
+h1 {
+    color: var(--sec);
+    font-size: 42px;
+    text-align: center;
+    text-shadow: 2px 2px 2px var(--tert);
+}
+
+.calc-grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows:minmax(120px, auto) repeat(5, 100px) ;
+    margin: 0 auto;
+    width: 500px;
+    min-height: 80vh;
+    background-color: var(--prim);
+    border: 6px solid var(--sec);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px var(--tert);
+}
+
+.header {
+    padding: 10px 0;
+    background-color: var(--prim);
+    border-bottom: 3px solid var(--tert);
+}
+
+.main {
+    padding: 50px 0;
+}
